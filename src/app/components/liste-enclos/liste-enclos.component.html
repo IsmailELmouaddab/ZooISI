@@ -1,0 +1,14 @@
+<!-- Affichage de la liste des clients -->
+<div *ngIf="!enclos || !enclos.length else enclosExist">
+    Aucun enclos à afficher
+</div>
+<ng-template #enclosExist>
+    <div>
+        {{ "nombre d'enclos : " + enclos.length }}
+    </div>
+</ng-template>
+
+<div *ngFor="let enclosT of enclos" (click)="emitSelectedEnclos(enclosT)">
+    <app-enclos [enclos]="enclosT" ></app-enclos>
+</div>
+

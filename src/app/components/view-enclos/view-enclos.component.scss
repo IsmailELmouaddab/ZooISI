@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center; 
+}
+
+.animal-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: calc(40% - 10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.animal-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.animal-card h3 {
+  margin: 10px 0 5px;
+}
+
+.animal-card p {
+  color: #666;
+}

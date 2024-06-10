@@ -1,0 +1,7 @@
+<div class="container">
+  <div *ngFor="let enclosT of enclos" class="animal-card">
+    <img [src]="enclosT.picture" alt="{{ enclosT.name }}">
+    <h3>{{ enclosT.name }}</h3>
+    <p>{{ enclosT.type }}</p>
+  </div>
+</div>

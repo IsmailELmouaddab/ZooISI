@@ -1,0 +1,15 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+
+  .clickable-span{
+    cursor: pointer;
+  }
+  .menu {
+    display: flex;
+
+    button {
+      width: 130px;
+    }
+  }
+}

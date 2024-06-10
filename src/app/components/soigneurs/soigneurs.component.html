@@ -1,0 +1,11 @@
+
+<p>
+    {{ soigneurs.name | uppercase }}
+  </p>
+  <div>
+    {{ soigneurs.age }}
+  </div>
+  <div *ngIf="displayPhoto">
+    <img [src]="soigneurs.picture"/>
+  </div>
+  

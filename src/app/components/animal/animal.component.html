@@ -1,0 +1,10 @@
+<!-- Affichage des informations d'un client -->
+<p>
+    {{ animal.name | uppercase }}
+</p>
+<div>
+    {{ animal.espece }}
+</div>
+<div *ngIf="displayPhoto">
+    <img [src]="animal.picture"/>
+</div>

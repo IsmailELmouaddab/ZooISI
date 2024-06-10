@@ -1,0 +1,10 @@
+<!-- Affichage des informations d'un client -->
+<p>
+  {{ enclos.name | uppercase }}
+</p>
+<div>
+  {{ enclos.type }}
+</div>
+<div *ngIf="displayPhoto">
+  <img [src]="enclos.picture"/>
+</div>

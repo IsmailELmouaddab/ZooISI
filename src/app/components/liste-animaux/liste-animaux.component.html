@@ -1,0 +1,15 @@
+<div *ngIf="animaux.length > 0; else noAnimalMessage">
+    <h1>Liste des animaux</h1>
+    <p>Nombre d'animaux: {{ animaux.length }}</p>
+    <div class="animals-grid">
+        <div *ngFor="let animal of animaux" >
+            <div class="animal" (click)="emitSelectedAnimal(animal)">
+                <app-animal [animal]="animal" ></app-animal>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #noAnimalMessage>
+    <p><i>Aucun animal à afficher</i></p>
+</ng-template>

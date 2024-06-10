@@ -1,0 +1,8 @@
+<div class="container">
+    <div *ngFor="let soigneur of soigneurs" class="animal-card">
+      <img [src]="soigneur.picture" alt="{{ soigneur.name }}">
+      <h3>{{ soigneur.name }}</h3>
+      <p>{{ soigneur.age }}</p>
+    </div>
+  </div>
+  

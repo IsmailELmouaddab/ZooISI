@@ -1,0 +1,10 @@
+<div class="container">
+  <div *ngFor="let animal of animaux" class="animal-card">
+    <img [src]="animal.picture" alt="{{ animal.name }}">
+    <h3 (click)="selectAnimal()">{{ animal.espece }}</h3>
+    <p>{{ animal.name  }}</p>
+  </div>
+</div>
+<div *ngIf="selectedAnimal">
+  <app-liste-animaux [animaux]="animaux"></app-liste-animaux>
+</div>
